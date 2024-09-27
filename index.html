@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="panel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel= "stylesheet"href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+     rel="stylesheet">
+</head>
+<body>
+    <div class="landingpg">
+    <div class="nav1">
+    <img src="loogo3.png">
+    <p class = "logo ">Rap<span>its</span></p>
+    <div class="location">
+        <i class="fa-solid fa-location-dot"></i>Fetching Location....</div>
+</div>
+    <div class="rapit">
+        <video autoplay muted  id="intro-video">
+            <source src="Deliveryanimation.mp4" type="video/mp4" />
+        </video>
+        <div class="content">
+            <h1 >“Foodie magic is happening… 🍛 Hold on while we find the yummiest places nearby!”</h1></div>
+    </div>
+</div>
+<div class="hero">
+<nav class="navbar">
+    <div class="logo">
+        <img src="loogo3.png" alt="Logo">
+    </div>
+
+    <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Location</span>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for food, cuisines, or restaurants">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="help">
+        <a href="#">Help</a>
+    </div>
+
+    <div class="sign-in">
+        <a href="#">Sign In</a>
+    </div>
+
+    <div class="cartt">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+</nav>
+<div class="main">
+   
+    <section class = "food">
+<div class="slider-bx">
+    <p class="slang">"🍟 Fries or a feast? What's your vibe today?"</p>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="food1.jpeg" alt="Food 1"></div>
+                <div class="slide"><img src="food2.jpg" alt="Food 2"></div>
+                <div class="slide"><img src="food3.jpg" alt="Food 3"></div>
+                <div class="slide"><img src="food4.jpg" alt="Food 4"></div>
+                <div class="slide"><img src="food5.jpg" alt="Food 5"></div>
+                <div class="slide"><img src="food6.jpg" alt="Food 6"></div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    
+      <div class="filter-bx">
+    <p class="slang"> Still Confused,check out filter!!</p>
+    <div class="filter-box">
+        <div class="filter-headings">
+          <h3 data-target="dietary">Dietary Preference</h3>
+          <h3 data-target="price">Price Range</h3>
+          <h3 data-target="delivery">Delivery Time</h3>
+          <h3 data-target="rating">Rating</h3>
+          <h3 data-target="explore">Explore</h3>
+        </div>
+        <div class="filter-content">
+          <p class="default-message">"Craving something delicious? 🍕 Choose a filter to find your match!"</p>
+          <div class="content" id="dietary">
+            <label><input type="checkbox"> Veg</label>
+            <label><input type="checkbox"> Non-Veg</label>
+          </div>
+          <div class="content" id="price">
+            <label><input type="radio" name="price"> Under 100</label>
+            <label><input type="radio" name="price"> 100-300</label>
+            <label><input type="radio" name="price"> Above 300</label>
+          </div>
+          <div class="content" id="delivery">
+            <label><input type="radio" name="delivery"> Under 30 mins</label>
+            <label><input type="radio" name="delivery"> 30 to 45 mins</label>
+            <label><input type="radio" name="delivery"> Above 45 mins</label>
+          </div>
+          <div class="content" id="rating">
+            <label><input type="radio" name="rating"> 1 Stars</label>
+            <label><input type="radio" name="rating"> 2 Stars</label>
+            <label><input type="radio" name="rating"> 3 Stars</label>
+            <label><input type="radio" name="rating"> 4 Stars</label>
+            <label><input type="radio" name="rating"> 5 Stars</label>
+          </div>
+          <div class="content" id="explore">
+            <label><input type="checkbox"> New to Rapits</label>
+          </div>
+        </div>
+        <button class="filtered"> Filter</button>
+      </div>
+    </div>
+    </section>
+    <hr>
+      <div class="restau"><p>Rapits Restaurant in </p></div>  
+      <div class="restaurant">
+    <div class="restaurant-card">
+            <img src="R1.jpg" alt="Restaurant 1" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 1</h2>
+            <p class="restaurant-rating">Rating: ★★★★☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 25 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Italian</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R2.avif" alt="Restaurant 2" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 2</h2>
+            <p class="restaurant-rating">Rating: ★★★☆☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 35 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Chinese</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R3.avif" alt="Restaurant 3" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 3</h2>
+            <p class="restaurant-rating">Rating: ★★★★☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 20 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Mexican</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R4.avif" alt="Restaurant 4" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 4</h2>
+            <p class="restaurant-rating">Rating: ★★★☆☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 40 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Indian</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R5.avif" alt="Restaurant 5" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 5</h2>
+            <p class="restaurant-rating">Rating: ★★★☆☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 30 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Thai</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R6.jpg" alt="Restaurant 6" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 6</h2>
+            <p class="restaurant-rating">Rating: ★★★★☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 25 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Japanese</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R7.avif" alt="Restaurant 7" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 7</h2>
+            <p class="restaurant-rating">Rating: ★★★☆☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 30 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Korean</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R8.avif" alt="Restaurant 8" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 8</h2>
+            <p class="restaurant-rating">Rating: ★★★☆☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 35 mins</p>
+            <p class="restaurant-cuisine">Cuisine: French</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R9.avif" alt="Restaurant 9" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 9</h2>
+            <p class="restaurant-rating">Rating: ★★★★☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 20 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Greek</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R10.avif" alt="Restaurant 10" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 10</h2>
+            <p class="restaurant-rating">Rating: ★★★☆☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 45 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Spanish</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R11.avif" alt="Restaurant 11" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 11</h2>
+            <p class="restaurant-rating">Rating: ★★★☆☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 40 mins</p>
+            <p class="restaurant-cuisine">Cuisine: Turkish</p>
+        </div>
+        <div class="restaurant-card">
+            <img src="R12.avif" alt="Restaurant 12" class="restaurant-image">
+            <h2 class="restaurant-name">Restaurant 12</h2>
+            <p class="restaurant-rating">Rating: ★★★★☆</p>
+            <p class="restaurant-delivery-time">Delivery Time: 30 mins</p>
+            <p class="restaurant-cuisine">Cuisine: American</p>
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="panel">
+
+    <div class="res-info">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h1>BURGER KING</h1>
+            <p class="tags">
+                <a href="#">Chinese</a>, <a href="#">Pasta</a>, <a href="#">Beverages</a>, 
+                <a href="#">Shake</a>, <a href="#">Pizza</a>, <a href="#">Desserts</a>
+            </p>
+            <div class="rating">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+            <p class="location">Indira Nagar, Lucknow</p>
+            <p class =open>Opens at 4pm</p>
+            <div class="buttons">
+                <button> <i class="fa-sharp fa-solid fa-map-pin"></i>LOCATION</button>
+                <button> <i class="fa-sharp fa-solid fa-phone"></i>CONTACTS</button>
+                <button><i class="fa-sharp fa-solid fa-share"></i>SHARE</button>
+                <button><i class="fa-sharp fa-solid fa-bookmark"></i>WISHLIST</button>
+            </div>
+            <h2>Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                    <div class="user-avatar"><i class="fa-sharp fa-solid fa-circle-user"></i></div>
+                    <p><strong>Shikhar</strong><br>Alfredo white sauce pasta is very very worst...</p>
+                </div>
+                <div class="review">
+                    <div class="user-avatar"><i class="fa-sharp fa-solid fa-circle-user"></i></div>
+                    <p><strong>Shikhar</strong><br>Alfredo white sauce pasta is very very worst...</p>
+                </div>
+                <div class="review">
+                    <div class="user-avatar"><i class="fa-sharp fa-solid fa-circle-user"></i></div>
+                    <p><strong>Shikhar</strong><br>Alfredo white sauce pasta is very very worst...</p>
+                </div>
+                <div class="review">
+                    <div class="user-avatar"><i class="fa-sharp fa-solid fa-circle-user"></i></div>
+                    <p><strong>Shikhar</strong><br>Alfredo white sauce pasta is very very worst...</p>
+                </div>
+                <button class="view-all">View all</button>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <h2>Photos</h2>
+            <div class="photos">
+                <div class="prow1">
+                    <img src="p1.jpg" alt="Photo 1">
+                
+                </div>
+                <div class="prow2">
+                    <img src="p2.jpg" alt="Photo 2">
+                    <img src="p3.jpg" alt="Photo 3">
+                    <div class="photo-more">
+                        <img src="p4.jpg" alt="Photo 4">
+                        <div class="view-more">View more</div>
+                    </div>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn">BOOK TABLE</button>
+                <button class="action-btn">ORDER ONLINE</button>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+    <div class="menu-left">
+        <div class="dropdowns">
+        <h3>"Craft Your Ideal Plate 🍽️🥘"</h3>
+            <div class="dropdown">
+                <button class="dropbtn">Rapits Recommends <i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Biryani</a>
+                  <a href="#">Paneer Butter Masala</a>
+                  <a href="#">Palak Paneer</a>
+                  <a href="#">Masala Dosa</a>
+                  <a href="#">Rogan Dosa</a>
+                  <a href="#">Butter Chicken</a>
+                </div>
+              </div>
+        
+              <div class="dropdown">
+                <button class="dropbtn">Best Offers<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Chole Bhature</a>                                      
+                  <a href="#">Tandoori Chicken</a>
+                  <a href="#">Vada Pav</a>
+                  <a href="#">Masala Dosa</a>
+                  <a href="#">Rogan Dosa</a>
+                  <a href="#">Dal Makhani</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Starter<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Samosa</a>                                      
+                  <a href="#">Paneer Tikka</a>
+                  <a href="#">Vada Pav</a>
+                  <a href="#">Chicken Tikka</a>
+                  <a href="#">Rogan Dosa</a>
+                  <a href="#">Aloo Tikki</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Main Course<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Speical Thali</a>                                      
+                  <a href="#">Plain Thali</a>
+                  <a href="#">South Indian</a>
+                  <a href="#">North Indian</a>
+                  <a href="#">Choole Rice</a>
+                </div>
+              </div>
+        
+              <div class="dropdown">
+                <button class="dropbtn">Desserts<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Gulab Gamun</a>                                      
+                  <a href="#">Halwa</a>
+                  <a href="#">Malpua</a>
+                  <a href="#">Rasmalai</a>
+                  <a href="#">Brownies</a>
+                </div>
+              </div>
+        
+              <div class="dropdown">
+                <button class="dropbtn">Ice Creams<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Vanilla</a>
+                  <a href="#">Chocolate</a>
+                  <a href="#">Strawberry</a>
+                  <a href="#">Mint Chocolate Chip</a>
+                  <a href="#">Cookies and Cream</a>
+                </div>
+              </div>
+        
+              <div class="dropdown">
+                <button class="dropbtn">Add-Ons<i class="fa-sharp fa-solid fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                  <a href="#">Rice Bowl</a>
+                  <a href="#">Chapati</a>
+                  <a href="#">Naan</a>
+                  <a href="#">Raita</a>
+                  <a href="#">Pickles</a>
+                </div>
+              </div>
+              
+            </div>
+    </div>
+    <div class="menu-right">
+        <div class="nav2">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for food, cuisines..">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+                <div class="cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+        
+    </div>
+        <div class="dish">
+            <div class="dish-card" data-name="Dish 1" data-price="230">
+                <div class="dish-info">
+                    <h3><span class="veg-icon"><img src="veg.png" alt="Vegetarian Symbol" width="25px" height="25px" /></span> Cold Coffee</h3>
+                    <p class="price">Rs. 230</p>
+                    <p class="rating"><i class="fa-sharp fa-solid fa-star"></i>4.1(1632)</p>
+                    <p class="description">Veg noodles served with delectable veg manchurian.</p>
+                </div>
+                <div class="dish-img">
+                    <img src="f3.jpg" alt="Dish Image">
+                    <div class="add-button">
+                        <button class="plus">+</button>
+                        <p>ADD</p>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+            </div>
+
+                <hr>
+            
+            <div class="dish-card" data-name="Dish 2" data-price="250">
+                <div class="dish-info">
+                    <h3><span class="veg-icon"><img src="veg.png" alt="Vegetarian Symbol" width="25px" height="25px" /></span> Momos</h3>
+                    <p class="price">Rs. 250</p>
+                    <p class="rating"><i class="fa-sharp fa-solid fa-star"></i> 4.3(1256)</p>
+                    <p class="description">A blend of spicy vegetables and fried rice.</p>
+                </div>
+                <div class="dish-img">
+                    <img src="f2.jpg" alt="Dish Image">
+                    <div class="add-button">
+                        <button class="plus">+</button>
+                        <p>ADD</p>
+                        <button class="minus" >-</button>
+                    </div>
+                </div>
+            </div>
+ 
+            <hr>           
+            <div class="dish-card" data-name="Dish 3" data-price="180">
+                <div class="dish-info">
+                    <h3><span class="veg-icon"><img src="veg.png" alt="Vegetarian Symbol" width="25px" height="25px" /></span> Noodles</h3>
+                    <p class="price">Rs. 180</p>
+                    <p class="rating"><i class="fa-sharp fa-solid fa-star"></i> 4.2(1120)</p>
+                    <p class="description">Fresh vegetable curry with steamed rice.</p>
+                </div>
+                <div class="dish-img">
+                    <img src="f5.jpg" alt="Dish Image">
+                    <div class="add-button">
+                        <button class="plus">+</button>
+                        <p>ADD</p>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+         <!-- cart page -->
+
+         <div class="basket">
+            <div class="nav3">
+                <div class="logo">
+                    <img src="loogo3.png" alt="Logo">
+                </div>
+                <div class="sign-in">
+                    <span class="sign-in"> <i class="fa-sharp fa-solid fa-user" ></i></span>
+                    <span>Sign in</span>
+                </div>
+            </div>
+        
+    <div class="cart-container">
+        <div class="header">
+            <h1>Cart</h1>
+        </div>
+    
+        <div class="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+    
+        <div class="billing-details">
+            <h2>Billing Details</h2>
+            <div class="billing-row">
+                <span>Item Total:</span>
+                <span class="item-total">Rs 0</span>
+            </div>
+            <div class="billing-row">
+                <span>Delivery Fee:</span>
+                <span class="delivery-fee">Rs 5</span>
+            </div>
+            <hr>
+            <div class="billing-row subtotal">
+                <span>Sub Total:</span>
+                <span class="subtotal-amount">Rs 5</span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- footer bar -->
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Rapits</h3>
+        <p>© 2024 By Shikhar</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Rapits One</a></li>
+          <li><a href="#">Rapits Instamart</a></li>
+          <li><a href="#">Rapits Genie</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Partner with us</a></li>
+          <li><a href="#">Ride with us</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Investor Relations</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>We deliver to:</h3>
+        <ul>
+          <li><a href="#">Bangalore</a></li>
+          <li><a href="#">Gurgaon</a></li>
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Delhi</a></li>
+          <li><a href="#">Mumbai</a></li>
+          <li><a href="#">Pune</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+    
+    
+
+<script src="script.js"></script>
+</body>
+</html>
